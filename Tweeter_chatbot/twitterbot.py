@@ -5,13 +5,13 @@ import time
 
 # Accessing the API module of Tweeter
 
-CONSUMER_KEY = ''
+CONSUMER_KEY = 'XXXXXXXXXXXXXxx'
 
-CONSUMER_SECRET = ''
+CONSUMER_SECRET = 'XXXXXXXXXXXXXx'
 
-ACCESS_KEY = ''
+ACCESS_KEY = 'XXXXXXXXXXXXXXx'
 
-ACCESS_SECRET = ''
+ACCESS_SECRET = 'XXXXXXXXXXX'
 
 #Connecting with TWITTER API
 
@@ -59,7 +59,7 @@ def reply():
     for mention in reversed(mentions):
        print(mention.id,"-",mention.text)
        try:
-           if 'hello satwik' in mention.text.lower():
+           if 'hi there!!!' in mention.text.lower():
                print("replying to: ",mention.user.screen_name)
                api.update_status('@'+mention.user.screen_name+" Hello "+mention.user.screen_name+"!!!",mention.id)
            elif ('how are you?' or 'how are you') in mention.text.lower():
